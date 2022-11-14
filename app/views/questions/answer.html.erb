@@ -1,4 +1,4 @@
-<h1>Stupid Coaching</h1>
+<h1 form-control>Stupid Coaching</h1>
 
 <blockquote>
   <p>
@@ -10,19 +10,21 @@
   </p>
    <p class= you> -You
    <br>
-   ---------------------------------------------------------------
+
    </p>
 
 </blockquote>
 
+<blockquote>
+  <div class="coach">
+    <p id= "res"><%= @answer %></p>
+      <cite id= "res-coach">Your coach
+        <br>
 
-  <p><%= @answer %></p>
-  <cite>-Your coach
-  <br>
-  ---------------------------------------------------------------
-  </cite>
-  <br>
-  <br>
-
+        </cite>
+      <br>
+    <br>
+  </div>
+</blockquote>
 
 <%= link_to  "Ask a new question", ask_path %>
